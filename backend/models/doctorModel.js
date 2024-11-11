@@ -7,7 +7,7 @@ const doctorSchema = new mongoose.Schema(
       required: true,
     },
     email: {
-      type: email,
+      type: String,
       required: true,
       unique: true,
     },
@@ -37,7 +37,7 @@ const doctorSchema = new mongoose.Schema(
     },
     available: {
       type: Boolean,
-      required: true,
+      default:true,
     },
     fees: {
       type: Number,
